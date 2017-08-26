@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: project_product_verison
+
+server:
+  port: 7020
+  context-path: /rest
+
+logging:
+  config: classpath: log4j.prod.properties

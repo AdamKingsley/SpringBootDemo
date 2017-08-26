@@ -1,0 +1,13 @@
+spring:
+  #配置数据源
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/testLink?useUnicode=true&characterEncoding=utf-8
+    sql-script-encoding: utf-8
+    username: root
+    password: root
+  #将生产环境和线上环境的有区别的配置
+  #放置在不同的配置文件中
+  #通过active属性来选择激活的哪个配置文件
+  profiles:
+    active: dev
